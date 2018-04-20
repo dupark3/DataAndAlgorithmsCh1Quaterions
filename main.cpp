@@ -13,13 +13,11 @@ int main(){
     Quaterion quaterion3 = quaterion1 + quaterion2;
     Quaterion quaterion4 = quaterion1 - quaterion2;
     Quaterion quaterion5 = quaterion1 * quaterion2;
+    Quaterion quaterion6 = quaterion1 / quaterion2;
     cout << "Added quaterion       : " << quaterion3 << endl
          << "Subtracted quaterion  : " << quaterion4 << endl
-         << "Multiplied quateiron  : " << quaterion5 << endl;
-
-  
-/*    Quaterion quaterion6 = quaterion1 / quaterion2;
-         << "Divided quaterion     : " << quaterion6 << endl;*/
+         << "Multiplied quateiron  : " << quaterion5 << endl
+         << "Divided quaterion     : " << quaterion6 << endl;        
 
     return 0;
 }
