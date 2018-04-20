@@ -53,6 +53,13 @@ std::ostream& operator<<(std::ostream& os, const Quaterion& q){
 std::istream& operator>>(std::istream& is, Quaterion& q){
     string s;
     getline(is, s);
-
+    size_t a_position = s.find('+', 0);
+    size_t b_position = s.find('i', a_position);
+    size_t c_position = s.find('j', b_position);
+    size_t d_position = s.find('k', c_position);
+    q.a = stoi(s.substr(0, a_position));
+    q.b = stoi(s.substr(a_position + 1, b_position));
+    q.c = stoi(s.substr(b_position + 1, c_position));
+    q.d = stoi(s.substr(c_position + 1, d_position));
     return is;
 }
